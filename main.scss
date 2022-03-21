@@ -13,13 +13,12 @@ body {
 .navbar {
     .button {
       background: var(--primary-color);
-      color: var(--secondary-color);
+      color: var(--primary-color);
       padding: .6em 1.3em;
       text-decoration: none;
       font-size: 1.2em;
       border-radius: 5em;
       font-weight: bold;
-      display: inline-block;
          
     }
   }
