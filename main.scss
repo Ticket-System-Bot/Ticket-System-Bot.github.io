@@ -3,10 +3,22 @@
     --secondary-color: #2f3136;
   }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    font-family: 'Poppins';
+    background: var(--secondary-color);
+  }
+
 .navbar {
     .button {
       background: var(--primary-color);
-      color: var(--secondary-color)
+      color: var(--secondary-color);
+      text-decoration: none;
+      font-size: 1.2em;
+      border-radius: 5em;
+      font-weight: bold;
+      display: inline-block;
          
     }
   }
