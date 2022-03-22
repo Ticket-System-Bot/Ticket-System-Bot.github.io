@@ -8,6 +8,7 @@
     height: 60px;
     display: block;
     background-color: var(--primary-color);
+    border-radius: 12px;
   }
 
 .inner_header {
@@ -15,7 +16,6 @@
     height: 80px;
     display: block;
     margin: 0 auto;
-    border-radius: 12px;
   }
 
 .logo_container {
