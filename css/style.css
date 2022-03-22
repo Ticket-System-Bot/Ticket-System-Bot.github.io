@@ -14,7 +14,8 @@
     width: 1000px;
     height: 80px;
     display: block;
-    margin: none;
+    margin: 0 auto;
+    border-radius: 12px;
   }
 
 .logo_container {
@@ -44,7 +45,7 @@ body {
     background-color: var(--secondary-color);
     border: none;
     color: white;
-    padding: .6em 1.3em;
+    padding: .4em 1.3em;
     text-align: center;
     text-decoration: none;
     display: inline-block;
