@@ -13,20 +13,6 @@
     border-radius: 10px;
   }
 
-.inner_header {
-    width: 1000px;
-    height: 80px;
-    display: block;
-    margin: 0 auto;
-  }
-
-.logo_container {
-    height: 100%;
-    display: table;
-    float: left;
-    
-  }
-
 .logo_container h1 {
     color: var(--primary-color);
     height: 80%;
