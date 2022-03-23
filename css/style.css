@@ -1,6 +1,6 @@
 :root {
   --primary-color: #5865f2;
-  --secondary-color: #2f3136;
+  --secondary-color: #222;
   }
 
 header {
@@ -10,16 +10,7 @@ header {
   height: 60px;
   display: block;
   background-color: var(--primary-color);
-  border-radius: 10px;
-  }
-
-.logo_container h1 {
-  color: var(--primary-color);
-  height: 80%;
-  display: table-cell;
-  vertical-align: middle;
-  font-family: 'Poppins';
-  font-size: 32px
+  padding: 30px 10%;
   }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
@@ -29,24 +20,94 @@ body {
   background: var(--secondary-color);
   }
 
-.button {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+button {
   background-color: var(--secondary-color);
   border: none;
   color: white;
-  padding: .4em 1.3em;
+  border: none;
+  padding: 9px 25px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 3px 2px;
   cursor: pointer;
   font-family: 'Poppins';
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
   }
 
-.nav_links {
+button:hover {
+  background-color: grey;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+
+body {
+	margin: 0;
+	background: #222;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
+}
+
+.container {
+	width: 50%;
+	margin: 0 auto;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+nav {
+  float: center;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
-  }
-.nav_links li {
+}
+
+nav li {
   display: inline-block;
-  padding: 10px 10px;
-  }
+  margin-left: 50px;
+  position: relative;
+}
+
+nav a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+nav a:hover {
+  color: var(--secondary-color);
+  transition: ease-in-out;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: var(--secondary-color);
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}

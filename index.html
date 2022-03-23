@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="icon" type="image/png" href="images/TICKET.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="HTML, CSS">
@@ -15,10 +16,16 @@
         font-family: 'Poppins';
       }
       img {
-        width: 50px;
+        width: 58px;
         border-radius: 40px;
         margin-left: 5px;
-        border: 5px solid #555;
+        border: 4px solid #23272A;
+        text-decoration: none;
+        top: 1px;
+        left: 1px;
+        position: absolute;
+        right:300px;
+        cursor: pointer;
       }
 
       .title {
@@ -35,7 +42,7 @@
 
      
       ::-webkit-scrollbar-track {
-        box-shadow: inset 0 0 5px grey; 
+        box-shadow: inset 0 0 5px #23272A; 
         border-radius: 10px;
       }
  
@@ -50,21 +57,24 @@
         background: #b30000; 
       }
       p {
-        color: #446cad;
         font-family: 'Poppins';
       }
     </style>
   </head>
-  <body style="background-color:#23272A">
+  <body>
     <header>
-      <a href="#">
-        <img src="images/TICKET.png" alt="Image could not be displayed">
-      </a>
-      <ul class="nav_links">
-        <li><a href="https://dsc.gg/ticket-system_bot" class="button" style="border-radius: 11px;">Invite</a></li>
-      </ul>
+      <div class="container">
+        <img src="images/TICKET.png" alt="LOGO">
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="https://dsc.gg/ticket-system_bot">Invite</a></li>
+            <li><a href="https://discord.gg/6bCKvP24kb">Support Server</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <h1 class="title"><blurple>Ticket System Discord Bot</blurple></h1>
-    <p align="center">The Ticket System Discord Bot is a support system bot on Discord.</p>
+    <p align="center" style="color: whitesmoke;">The Ticket System Discord Bot is a support system bot on Discord.</p>
   </body>
 </html>
