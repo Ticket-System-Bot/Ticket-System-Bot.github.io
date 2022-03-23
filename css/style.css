@@ -3,7 +3,7 @@
     --secondary-color: #2f3136;
   }
 
-.header {
+header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
