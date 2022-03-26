@@ -84,6 +84,7 @@ nav li {
   display: inline-block;
   margin-left: 15px;
   position: relative;
+  padding-bottom: 10px;
 }
 
 nav a {
