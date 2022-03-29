@@ -105,7 +105,7 @@ nav a::before {
   height: 5px;
   background-color: var(--secondary-color);
   position: absolute;
-  top: -5px;
+  top: 0;
   width: 0%;
   transition: all ease-in-out 250ms;
 }
@@ -115,7 +115,7 @@ nav a:hover::before {
 }
 
 @media only screen and (max-width:700px){
-  nav li{
+  nav ul{
     display: none;
   }
   nav a{
