@@ -34,7 +34,6 @@ button {
   background-color: var(--secondary-color);
   border: none;
   color: white;
-  border: none;
   padding: 9px 25px;
   text-align: center;
   text-decoration: none;
@@ -102,10 +101,11 @@ nav a:hover {
 nav a::before {
   content: '';
   display: block;
+  border-radius: 10px; 
   height: 5px;
   background-color: var(--secondary-color);
   position: absolute;
-  top: 0;
+  top: 1.5em;
   width: 0%;
   transition: all ease-in-out 250ms;
 }
