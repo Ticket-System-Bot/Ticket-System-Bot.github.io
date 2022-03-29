@@ -15,6 +15,7 @@ header {
   }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
 
 body {
   font-family: 'Poppins';
@@ -89,8 +90,8 @@ nav li {
 nav a {
   color: var(--secondary-color);
   text-decoration: none;
-  text-transform: uppercase;
-  font-size: 15px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
 }
 
 nav a:hover {
