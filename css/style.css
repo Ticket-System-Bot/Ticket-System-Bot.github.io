@@ -133,7 +133,7 @@ nav a:hover::before {
 
 .wrapper{
   width: 420px;
-  padding: 30px 20px;
+  padding: 50px 30px;
   position: absolute;
   bottom: 50px;
   right: 0;
@@ -156,7 +156,7 @@ nav a:hover::before {
   padding: 10px;
   background-color: #ffffff;
   box-shadow: 0 10px 20px rgba(75, 50, 50, 0.05);
-  border-left: 8px solid lightskyblue;
+  border-left: 8px solid #2F86EB;
   border-radius: 7px;
   display: grid;
   grid-template-columns: 1.2fr 6fr 0.5fr;
@@ -168,7 +168,7 @@ nav a:hover::before {
 }
 .container-1 i{
   font-size: 40px;
-  color: lightskyblue;
+  color: #2F86EB;
 }
 .container-2 p:first-child{
   color: #101020;
@@ -182,8 +182,8 @@ nav a:hover::before {
 }
 #toast button{
   align-self: flex-start;
-  background-color: transparent;
   font-size: 25px;
+  background: transparent;
   line-height: 0;
   color: #656565;
   cursor: pointer;
