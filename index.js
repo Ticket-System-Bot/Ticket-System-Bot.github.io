@@ -4,7 +4,7 @@ function showToast(){
     clearTimeout(x);
     toast.style.transform = "translateX(0)";
     x = setTimeout(()=>{
-        toast.style.transform = "translateX(400px)"
+        toast.style.transform = "translateX(350px)"
     }, 4000);
 }
 function closeToast(){
