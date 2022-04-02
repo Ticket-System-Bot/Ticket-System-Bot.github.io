@@ -72,19 +72,22 @@ header::after {
 
 nav {
   float: center;
+  align-self: center;
+  justify-content: center;
 }
 
 nav ul {
   margin: auto;
-  padding: -50px 1px;
+  padding: -50px 10px;
   list-style: none;
 }
 
 nav li {
   display:inline-flex;
-  margin-left: 80px;
+  margin-left: 70px;
   position: relative;
   padding-bottom: 20px;
+  justify-content: center;
 }
 
 nav a {
@@ -187,4 +190,22 @@ nav a:hover::before {
   line-height: 0;
   color: #656565;
   cursor: pointer;
+}
+
+code {
+  font-family: 'Work Sans', monospace;
+  font-size: inherit;
+}
+
+/* Code in text */
+p > code,
+li > code,
+dd > code,
+td > code {
+  background: var(--secondary-color-light);
+  word-wrap: break-word;
+  box-decoration-break: clone;
+  padding: .1rem .3rem .2rem;
+  border-radius: 5px;
+  color: var(--primary-color)
 }
