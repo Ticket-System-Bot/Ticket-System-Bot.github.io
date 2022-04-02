@@ -67,6 +67,7 @@
       p {
         font-family: 'Poppins';
         font-size: 14.5px;
+        font-weight: 100;
       }
       #docbox {
         box-shadow: 20px 20px 50px 15px #5865f2;
@@ -83,20 +84,6 @@
     </style>
   </head>
   <body>
-    <div class="wrapper">
-      <div id="toast">
-          <div class="container-1">
-              <i class="fas fa-info-circle"></i>
-          </div>
-          <div class="container-2">
-              <p>Information</p>
-              <p>This website is still in development!</p>
-          </div>
-          <button id="close" onclick="closeToast()">
-              &times;
-          </button>
-      </div>
-    </div>
     <header>
       <div class="container">
         <img src="images/TICKET.png" alt="LOGO" class="logo" title="Ticket System#4810
@@ -119,9 +106,11 @@
     <br>
     <br>
     <div id="docbox">
+      <p>Commands marked in <required>red</required> are required.</p>
+      <p>Commands marked in <optional>yellow</optional> are optional.</p>
       <!-- <p><code>/command</code>  •   Description</p> -->
       <br>
-      <h3><u>Setup Commands</u> <optional>(MANAGE GUILD REQUIRED)</optional></h3>
+      <h3><u>Setup Commands <optional>(MANAGE GUILD REQUIRED)</optional></u></h3>
       <p><code>/setup</code>  •   Setup your server in an interactive proccess</p>
       <p><code>/config channel <required><#channel></required></code>  •   Set the channel where users will create tickets in</p>
       <p><code>/config category <required><@category></required></code>  •  Set the category where tickets will be created <optional>(MANAGE CHANNEL PERMISSIONS REQUIRED)</optional></p>
@@ -130,7 +119,20 @@
       <p><code>/config delete_on_leave <required> &lt;value&gt;</required></code>   •   Set whether tickets should be deleted when the author of it leaves</p>
       <p><code>/config log_channel <required><#channel></required></code>  •   Set the log channel for the bot <optional>(MANAGE WEBHOOKS REQUIRED)</optional></p>
       <p><code>/config log_events</code>  •   Set what events are dispatched to the log channel when happening (<code><optional>Ticket Create</optional></code>, <code><optional>Ticket Close</optional></code>, <code><optional>Ticket Delete</optional></code>, <code><optional>Ticket Transcripts</optional></code>)</optional></p>
+      <p><code>/config staff_roles <required><@role> &lt;type: add, reset, remove&gt;</required></code>  •   Add a role to the staff roles, remove a role from the staff roles, or reset the staff roles</p>
+      <p><code>/config blacklist_roles <required><@role> &lt;type: add, reset, remove&gt;</required></code>  •   Add a role to the blacklist roles, remove a role from the blacklist roles, or reset the blacklist roles <optional>(CANNOT CREATE TICKETS)</optional></p>
       
+      <br>
+
+      <h3><u>Ticket Commands <optional>(PERMISSIONS: CANNOT BE TICKET AUTHOR)</optional></u></h3>
+      <p><code>/add <required><@user></required> <optional>[reason]</optional></code>  •   Add a user to the ticket</p>
+      <p><code>/remove <required><@user></required> <optional>[reason]</optional></code>  •   Remove a user from the ticket</p>
+      <p><code>/request_close <required>&lt;reason&gt;</required></code>  •   Request the ticket author to give you permission to close the ticket</p>
+
+      <br>
+      <h3><u>General Commands</u></h3>
+      <p><code>/help</code>  •   Shows this help command</p>
+
       <br>
     </div>
     <br>

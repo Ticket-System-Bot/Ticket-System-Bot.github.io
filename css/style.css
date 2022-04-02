@@ -207,5 +207,6 @@ td > code {
   box-decoration-break: clone;
   padding: .1rem .3rem .2rem;
   border-radius: 5px;
-  color: var(--primary-color)
+  color: var(--primary-color);
+  font-weight: 200;
 }
