@@ -11,6 +11,6 @@ function closeToast(){
     toast.style.transform = "translateX(400px)";
 }
 
-window.addEventListener('load', (event) => {
+/* window.addEventListener('load', (event) => {
   showToast();
-});
+}); */
