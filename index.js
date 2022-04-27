@@ -11,6 +11,12 @@ function closeToast(){
     toast.style.transform = "translateX(400px)";
 }
 
+const typeWriter = document.getElementById('typewriter-text');
+const text = 'Ticket System';
+
+typeWriter.innerHTML = text;
+typeWriter.style.setProperty('--characters', text.length);
+
 /* window.addEventListener('load', (event) => {
   showToast();
 }); */
