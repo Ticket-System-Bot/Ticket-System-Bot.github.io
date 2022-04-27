@@ -20,3 +20,4 @@ typeWriter.style.setProperty('--characters', text.length);
 /* window.addEventListener('load', (event) => {
   showToast();
 }); */
+
