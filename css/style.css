@@ -224,7 +224,7 @@ td > code {
 
 .typewriter-effect > .text {
   max-width: 0;
-  animation: typing 3.5s steps(var(--characters)) forwards;
+  animation: typing 3s steps(var(--characters)) forwards;
   white-space: nowrap;
   overflow: hidden;
 }
