@@ -126,11 +126,12 @@ nav a:hover::before {
     font-size: 15px;
   }
   nav li{
+    display: inline-flexbox;
     padding-left: 1px;
     justify-content: left;
   }
   .container{
-    width: 1000%;
+    width: 2000%;
     overflow-x:hidden;
     overflow-y:auto;
   }
