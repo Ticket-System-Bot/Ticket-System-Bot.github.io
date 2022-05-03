@@ -12,6 +12,8 @@ header {
   display: inline-flexbox;
   background-color: var(--primary-color);
   padding: 30px 10%;
+  overflow: auto;
+  white-space: nowrap;
   }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
