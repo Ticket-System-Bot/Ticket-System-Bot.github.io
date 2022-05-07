@@ -290,7 +290,8 @@ a {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #101010;
+  background-color: var(--primary-color-light);
+
 }
 
 .nav-menu {
@@ -326,7 +327,7 @@ a {
 }
 
 .nav-link:hover{
-  text-shadow: 1.5rem 1.5rem 1.5rem var(--secondary-color);
+  text-shadow: 0.5rem 0.5rem 0.5rem var(--secondary-color);
 }
 
 .nav-logo {
@@ -350,16 +351,25 @@ a {
       text-align: center;
       transition: 0.3s;
       box-shadow:
-          0 10px 27px var(--secondary-color);
-  }
-  .typewriter-effect:after {
-    content: " |";
-    animation: blink 1s infinite;
-    animation-timing-function: step-end;
+          1rem 10px 27px var(--secondary-color);
   }
   .nav-menu.active {
-      left: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    left: 0;
   }
+
+  @keyframes blink {
+    0%,
+    75%,
+    100% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 0;
+    }
+  }
+  
 
   .nav-item {
       margin: 2rem 0;
@@ -369,6 +379,7 @@ a {
       display: block;
       color: var(--primary-color);
       cursor: pointer;
+      box-shadow: 1rem 1rem 1rem var(--secondary-color);
   }
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
@@ -376,10 +387,12 @@ a {
 }
 
   .hamburger.active .bar:nth-child(1) {
+      color: var(--primary-color);
       transform: translateY(8px) rotate(45deg);
   }
 
   .hamburger.active .bar:nth-child(3) {
+      color: var(--primary-color);
       transform: translateY(-8px) rotate(-45deg);
   }
 
