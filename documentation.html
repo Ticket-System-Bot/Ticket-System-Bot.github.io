@@ -87,19 +87,35 @@
     </style>
   </head>
   <body>
-    <header>
-      <div class="container">
-        <img src="images/TICKET.png" alt="LOGO" class="logo" title="Ticket System#4810">
-        <nav>
-          <ul>
-            <li><a href="index.html" title="Home">Home</a></li>
-            <li><a href="invite.html" title="Invite the bot">Invite</a></li>
-            <li><a href="https://discord.gg/6bCKvP24kb" title="Join the support server">Support Server</a></li>
-            <li><a title="You're here!">Documentation</a></li>
-            <li><a href="premium.html" title="Premium">Premium</a></li>
+    <header class="header">
+      <nav class="navbar">
+        <img src="images/TICKET.png" alt="LOGO" class="logo" title="Ticket System#4810
+        ">
+        <center>
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+          </li>
+              <li class="nav-item">
+                  <a href="https://discord.gg/6bCKvP24kb" class="nav-link">Support Server</a>
+              </li>
+              <li class="nav-item">
+                  <a href="invite.html" class="nav-link">Invite</a>
+              </li>
+              <li class="nav-item">
+                  <a href="documentation.html" class="nav-link">Documentation</a>
+              </li>
+              <li class="nav-item">
+                  <a href="https://ticket-system.instatus.com/" class="nav-link">Status</a>
+              </li>
           </ul>
-        </nav>
-      </div>
+        </center>
+          <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+          </div>
+      </nav>
     </header>
     <br>
     <br>
@@ -124,7 +140,8 @@
       <p><code>/config log_events</code>  •   Set what events are dispatched to the log channel when happening (<code><optional>Ticket Create</optional></code>, <code><optional>Ticket Close</optional></code>, <code><optional>Ticket Delete</optional></code>, <code><optional>Ticket Transcripts</optional></code>)</optional></p>
       <p><code>/config staff_roles <required><@role> &lt;type: add, reset, remove&gt;</required></code>  •   Add a role to the staff roles, remove a role from the staff roles, or reset the staff roles</p>
       <p><code>/config blacklist_roles <required><@role> &lt;type: add, reset, remove&gt;</required></code>  •   Add a role to the blacklist roles, remove a role from the blacklist roles, or reset the blacklist roles <optional>(CANNOT CREATE TICKETS)</optional></p>
-      <p>⭐ <code>/config reviews</code>  •   Configure reviews on a ticket being deleted/closed</p>
+      <p><code>/config reviews</code>  •   Configure reviews on a ticket being deleted/closed</p>
+      <p><code>/config teams <required>&lt;name&gt;</required> <required>&lt;category: discord.Category&gt;</required> <required>&lt;type: add, reset, remove&gt;</required></code>  •   Add, reset, or remove custom teams</p>
       
       <br>
 
@@ -132,6 +149,7 @@
       <p><code>/add <required><@user></required> <optional>[reason]</optional></code>  •   Add a user to the ticket</p>
       <p><code>/remove <required><@user></required> <optional>[reason]</optional></code>  •   Remove a user from the ticket</p>
       <p><code>/request_close <required>&lt;reason&gt;</required></code>  •   Request the ticket author to give you permission to close the ticket</p>
+      <p><code>/move <required>&lt;team&gt;</required> <required>&lt;reason&gt;</required></code>  •   Move a ticket to a custom team</p>
 
       <br>
       <h3><u>General Commands</u></h3>
