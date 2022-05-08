@@ -397,3 +397,22 @@ a {
   }
 
 }
+
+:target {
+  border-radius: 3px;
+  animation: highlight 1500ms ease-out;
+}
+@keyframes highlight {
+  0% {
+    overflow: hidden;
+    background-color: var(--primary-color);
+  }
+  50% {
+    overflow: hidden;
+    background-color: var(--primary-color-light);
+  }
+  100% {
+    overflow: hidden;
+    background-color: inherit;
+  }
+}
