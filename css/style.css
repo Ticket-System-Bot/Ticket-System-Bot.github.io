@@ -353,7 +353,7 @@ a {
       text-align: center;
       transition: 0.3s;
       box-shadow:
-          1rem 10px 27px var(--secondary-color);
+          1rem 1rem 1rem black;
   }
   .nav-menu.active {
     -webkit-transition: all 0.3s ease-in-out;
