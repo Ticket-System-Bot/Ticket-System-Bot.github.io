@@ -3,6 +3,7 @@
   --secondary-color: #23272A;
   --secondary-color-light: #2C2F33;
   --primary-color-light: #5663F7;
+  --premium-color: #FFB229;
   }
 
 /* header {
@@ -328,7 +329,7 @@ a {
 }
 
 .nav-link:hover{
-  text-shadow: 0rem 1rem 1rem var(--secondary-color-light);
+  text-shadow: 0rem 0.5rem 0.5rem black;
 }
 
 .nav-logo {
