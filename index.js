@@ -20,12 +20,14 @@ function closeToast(){
     toast.style.transform = "translateX(400px)";
 }
 
+
 const typeWriter = document.getElementById('typewriter-text');
 const text = 'Ticket System';
 
-typeWriter.innerHTML = text;
-typeWriter.style.setProperty('--characters', text.length);
-
+if (typeWriter) {
+    typeWriter.innerHTML = text;
+    typeWriter.style.setProperty('--characters', text.length);
+}
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
