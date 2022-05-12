@@ -272,6 +272,7 @@ a {
 
 .header{
   border-bottom: 1px solid #E2E8F0;
+  position: sticky;
 }
 
 .navbar {
@@ -279,7 +280,9 @@ a {
   justify-content: center;
   align-items: center;
   padding: 1rem 1.5rem;
+  position: sticky;
 }
+
 
 .hamburger {
   display: none;
@@ -401,7 +404,7 @@ a {
 }
 
 :target {
-  border-radius: 3px;
+  border-radius: 0.5rem;
   animation: highlight 1500ms ease-out;
 }
 @keyframes highlight {
