@@ -405,7 +405,7 @@ a {
 
 :target {
   border-radius: 0.5rem;
-  animation: highlight 1500ms ease-out;
+  animation: highlight 1750ms ease-out;
 }
 @keyframes highlight {
   0% {
