@@ -20,8 +20,8 @@
     <style>
       @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
       @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-      @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
       @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
       blurple {
         color: #5865f2;
         font-family: 'Poppins';
@@ -42,7 +42,7 @@
 
       .title {
         font-weight: bold;
-        font-family: 'Poppins';
+        font-family: 'Open Sans', sans-serif;
         vertical-align: top;
         float: center;
         text-align: center;
@@ -69,9 +69,9 @@
         background: grey; 
       }
       p {
-        font-family: 'Open Sans';
-        font-size: 14.5px;
-        font-weight: 100;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 16px;
+        font-weight: 200;
       }
       #docbox {
         /* box-shadow: 0 0.5em 0.5em black; */
@@ -85,7 +85,7 @@
         color: #f83333;
       }
       optional {
-        color: rgba(250, 250, 85, 0.938);
+        color: #f3dc6b;
       }
       center {
         display: block;
@@ -146,47 +146,50 @@
         <p>Command arguments marked in <required>red</required> are required.</p>
         <p>Command arguments marked in <optional>yellow</optional> are optional.</p>
         <p>Commands marked with <code>⭐</code> are <a href="premium.html" style="color:#FFB229; text-decoration-color: #FFB229;">premium commands</a>.</p>
-        <!-- <p><code>/command</code>  •   Description</p> -->
+        <!-- <p style="margin-bottom:0.75em"><code>/command</code>  •   Description</p> -->
       </div>
     </center>
     <br>
     <div id="docbox">
       <br>
-      <h3>Setup Commands <optional>(MANAGE GUILD REQUIRED)</optional></h3>
-      <p id="setup"><code>/setup</code>  •   Setup your server in an interactive proccess</p>
-      <p id="configs"><code>/configs <optional>[compact]</optional></code>  •   View all the configurations set for the current server, <code>compact=True</code> shows a compact response</p>
-      <p id="config_channel"><code>/config channel <required><#channel></required></code>  •   Set the channel where users will create tickets in</p>
-      <p id="config_category"><code>/config category <required><@category></required></code>  •  Set the category where tickets will be created <optional>(MANAGE CHANNEL PERMISSIONS REQUIRED)</optional></p>
-      <p id="config_ticket_embed"><code>/config ticket_embed</code>  •   Customize the embed that is sent on a ticket being created</p>
-      <p id="config_message"><code>/config message</code>  •  Set the message that is sent on ticket creation (top of the embed)</p>
-      <p id="config_delete_on_leave"><code>/config delete_on_leave <required> &lt;value&gt;</required></code>   •   Set whether tickets should be deleted when the author of it leaves</p>
-      <p id="config_log_channel"><code>/config log_channel <required><#channel></required></code>  •   Set the log channel for the bot <optional>(MANAGE WEBHOOKS REQUIRED)</optional></p>
-      <p id="config_log_events"><code>/config log_events</code>  •   Set what events are dispatched to the log channel when happening (<code><optional>Ticket Create</optional></code>, <code><optional>Ticket Close</optional></code>, <code><optional>Ticket Delete</optional></code>, <code><optional>Ticket Transcripts</optional></code>)</optional></p>
-      <p id="config_staff_roles"><code>/config staff_roles <required><@role> &lt;type: add, reset, remove&gt;</required></code>  •   Add a role to the staff roles, remove a role from the staff roles, or reset the staff roles</p>
-      <p id="config_blacklist_roles"><code>/config blacklist_roles <required><@role> &lt;type: add, reset, remove&gt;</required></code>  •   Add a role to the blacklist roles, remove a role from the blacklist roles, or reset the blacklist roles <optional>(CANNOT CREATE TICKETS)</optional></p>
-      <p id="config_admin_roles"><code>/config admin_roles <required><@role> &lt;type: add, reset, remove&gt;</required></code>  •   Add a role to the admin roles, remove a role from the admin roles, or reset the admin roles</p>
-      <p id="config_reviews"><code>/config reviews</code>  •   Configure reviews on a ticket being deleted/closed</p>
-      <p id="config_teams"><code>/config teams <required>&lt;name&gt;</required> <required>&lt;category: discord.Category&gt;</required> <required>&lt;type: add, reset, remove&gt;</required></code>  •   Add, reset, or remove custom teams</p>
+      <h3>Setup Commands</h3>
+      <p style="margin-left:0.75em; padding-top: 0.25em; padding-bottom: 0.70em;"> <i class="fa-solid fa-circle-info" style="margin-right:0.25em; color:#f3dc6b;"></i>   •    <strong>Users with <u style="color:#5865f2;">Manage Guild</u> permissions or in the <u><a style="text-decoration:none; text-decoration-color:none; color:#5865f2;">admin role(s)</a></u> can use these commands</strong></p>
+      <p id="setup" style="margin-bottom:0.75em"><code>/setup</code>  •   Setup your server in an interactive proccess</p>
+      <p id="configs" style="margin-bottom:0.75em"><code>/configs <optional>[compact]</optional></code>  •   View all the configurations set for the current server, <code>compact=True</code> shows a compact response</p>
+      <p id="config_channel" style="margin-bottom:0.75em"><code>/config channel <required><#channel></required></code>  •   Set the channel where users will create tickets in</p>
+      <p id="config_category" style="margin-bottom:0.75em"><code>/config category <required><@category></required></code>  •  Set the category where tickets will be created <optional>(MANAGE CHANNEL PERMISSIONS REQUIRED)</optional></p>
+      <p id="config_ticket_embed" style="margin-bottom:0.75em"><code>/config ticket_embed</code>  •   Customize the embed that is sent on a ticket being created</p>
+      <p id="config_message" style="margin-bottom:0.75em"><code>/config message</code>  •  Set the message that is sent on ticket creation (top of the embed)</p>
+      <p id="config_delete_on_leave" style="margin-bottom:0.75em"><code>/config delete_on_leave <required> &lt;value&gt;</required></code>   •   Set whether tickets should be deleted when the author of it leaves</p>
+      <p id="config_log_channel" style="margin-bottom:0.75em"><code>/config log_channel <required><#channel></required></code>  •   Set the log channel for the bot <optional>(MANAGE WEBHOOKS REQUIRED)</optional></p>
+      <p id="config_log_events" style="margin-bottom:0.75em"><code>/config log_events</code>  •   Set what events are dispatched to the log channel when happening (<code><optional>Ticket Create</optional></code>, <code><optional>Ticket Close</optional></code>, <code><optional>Ticket Delete</optional></code>, <code><optional>Ticket Transcripts</optional></code>)</optional></p>
+      <p id="config_staff_roles" style="margin-bottom:0.75em"><code>/config staff_roles <required><@role> &lt;type: add, reset, remove&gt;</required></code>  •   Add a role to the staff roles, remove a role from the staff roles, or reset the staff roles</p>
+      <p id="config_blacklist_roles" style="margin-bottom:0.75em"><code>/config blacklist_roles <required><@role> &lt;type: add, reset, remove&gt;</required></code>  •   Add a role to the blacklist roles, remove a role from the blacklist roles, or reset the blacklist roles <optional>(CAN'T CREATE TICKETS)</optional></p>
+      <p id="config_admin_roles" style="margin-bottom:0.75em"><code>/config admin_roles <required><@role> &lt;type: add, reset, remove&gt;</required></code>  •   Add a role to the admin roles, remove a role from the admin roles, or reset the admin roles</p>
+      <p id="config_reviews" style="margin-bottom:0.75em"><code>/config reviews</code>  •   Configure reviews on a ticket being deleted/closed</p>
+      <p id="config_teams" style="margin-bottom:0.75em"><code>/config teams <required>&lt;name&gt;</required> <required>&lt;category: discord.Category&gt;</required> <required>&lt;type: add, reset, remove&gt;</required></code>  •   Add, reset, or remove custom teams</p>
       <br>
     </div>
     <br>
     <div id="docbox">
-      <h3>Ticket Commands <optional>(PERMISSIONS: CANNOT BE TICKET AUTHOR)</optional></h3>
-      <p id="add"><code>/add <required><@user></required> <optional>[reason]</optional></code>  •   Add a user to the ticket</p>
-      <p id="remove"><code>/remove <required><@user></required> <optional>[reason]</optional></code>  •   Remove a user from the ticket</p>
-      <p id="request_close"><code>/request_close <required>&lt;reason&gt;</required></code>  •   Request the ticket author to give you permission to close the ticket</p>
-      <p id="move"><code>/move <required>&lt;team&gt;</required> <required>&lt;reason&gt;</required></code>  •   Move a ticket to a custom team</p>
+      <h3>Ticket Commands</h3>
+      <p style="margin-left:0.75em; padding-top: 0.25em; padding-bottom: 0.70em;"> <i class="fa-solid fa-circle-info" style="margin-right:0.25em; color:#f3dc6b;"></i>   •    <strong>Users with <u style="color:#5865f2;">Manage Guild</u> permissions or in the <u><a style="text-decoration:none; text-decoration-color:none; color:#5865f2;">staff role(s)</a></u> can use these commands</strong></p>
+      <p id="add" style="margin-bottom:0.75em"><code>/add <required><@user></required> <optional>[reason]</optional></code>  •   Add a user to the ticket</p>
+      <p id="remove" style="margin-bottom:0.75em"><code>/remove <required><@user></required> <optional>[reason]</optional></code>  •   Remove a user from the ticket</p>
+      <p id="request_close" style="margin-bottom:0.75em"><code>/request_close <required>&lt;reason&gt;</required></code>  •   Request the ticket author to give you permission to close the ticket</p>
+      <p id="move" style="margin-bottom:0.75em"><code>/move <required>&lt;team&gt;</required> <required>&lt;reason&gt;</required></code>  •   Move a ticket to a custom team</p>
       <br>
     </div>
     <br>
     <div id="docbox">
       <h3>General Commands</h3>
-      <p id="help"><code>/help</code>  •   Shows the help command</p>
-      <p id="stats"><code>/stats</code>  •   Shows the statistics regarding the bot</p>
-      <p id="serverinfo"><code>/serverinfo</code>  •   View info about the server</p>
-      <p id="embed"><code>/embed <required>&lt;channel&gt;</required> <optional>[ping_role]</optional></code>  •   Build an embed with an interactive proccess</p>
-      <p id="poll_start"><code>/poll start &lt;topic&gt; [ping: discord.Role] [channel]</code>  •   Start a poll</p>
-      <p id="poll_end"><code>/poll end &lt;message_id&gt; [channel]</code>  •   End a poll</p>
+      <p id="help" style="margin-bottom:0.75em"><code>/help</code>  •   Shows the help command</p>
+      <p id="stats" style="margin-bottom:0.75em"><code>/stats</code>  •   Shows the statistics regarding the bot</p>
+      <p id="serverinfo" style="margin-bottom:0.75em"><code>/serverinfo</code>  •   View info about the server</p>
+      <p style="margin-left:0.75em; padding-bottom: 0.5em;"> <i class="fa-solid fa-circle-info" style="margin-right:0.25em; color:#f3dc6b;"></i>   •    <strong>Users with <u style="color:#5865f2;">Manage Guild</u> permissions or in the <u><a style="text-decoration:none; text-decoration-color:none; color:#5865f2;">admin role(s)</a></u> can use these commands</strong></p>
+      <p id="embed" style="margin-bottom:0.75em"><code>/embed <required>&lt;channel&gt;</required> <optional>[ping_role]</optional></code>  •   Build an embed with an interactive proccess</p>
+      <p id="poll_start" style="margin-bottom:0.75em"><code>/poll start &lt;topic&gt; <optional>[ping_role] [channel]</optional></code>  •   Start a poll</p>
+      <p id="poll_end" style="margin-bottom:0.75em"><code>/poll end &lt;message_id&gt; <optional>[channel]</optional></code>  •   End a poll</p>
       <br>
     </div>
     <br>
