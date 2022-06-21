@@ -1,1 +1,1 @@
-https://ticket-system.fupl.ml/
+https://ticketsystembot.ml/
