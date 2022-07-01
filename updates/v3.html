@@ -11,12 +11,11 @@
     <meta name="description" content="Ticket System Discord bot. Give your server members the support they deserve.">
     <meta name="theme-color" content="#5865f2">
     <title>Ticket System - Bot</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <!--Font Awesome-->
     <script src="https://kit.fontawesome.com/76396ecd10.js" crossorigin="anonymous"></script>
     <!--Stylesheet-->
-    <link rel="stylesheet" href="style.css">
     <script async src="https://arc.io/widget.min.js#hD9CJ6sv"></script>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
@@ -28,19 +27,12 @@
         color: #5865f2;
         font-family: 'Poppins';
       }
-      .comingsoon {
-        border: 1px solid;
-        padding: 10px;
-        box-shadow: 5px 10px #5865f2;
-        cursor: pointer;
-      }
 
 
-      .topgg {
-        border: 5px solid #5865f2; 
-        border-radius: 20px; 
-        width: 40%;
-        margin-left: 30%;
+
+      h1, h2, h3 {
+        text-shadow: 2px 2px 4px black;
+        font-family: 'Open Sans';
       }
 
       .title {
@@ -49,6 +41,11 @@
         vertical-align: top;
         float: center;
         text-align: center;
+	      -webkit-text-stroke: 1px #5663F7;
+	      -webkit-text-fill-color:#181b1d;
+        font-size: 50px;
+        text-shadow: 0px 9px 8px black;
+      letter-spacing: 2px;
       }
     
       ::-webkit-scrollbar {
@@ -72,7 +69,9 @@
         background: grey; 
       }
       p {
-        font-family: 'Quicksand';
+        font-family: 'Poppins';
+        color: whitesmoke;
+        text-align: center;
       }
       center {
         display: block;
@@ -80,55 +79,36 @@
         margin-right: auto;
         align-self: center;
         }
+
+      p a {text-decoration: underline; text-decoration-color: #cdd0fb; text-decoration-style: solid; text-decoration-thickness: 0.25rem; text-underline-position: under; color: #5865f2}
+      p a:hover {text-decoration-color: #5865f2; transition: ease text-decoration-color 0.45s; cursor: pointer;}
     </style>
   </head>
   <body>
-    <header class="header">
-      <nav class="navbar">
-        <img src="images/TICKET.png" alt="LOGO" class="logo" title="Ticket System#4810
-        ">
-        <center>
-          <ul class="nav-menu">
-            <li class="nav-item">
-              <a href="/" class="nav-link">Home</a>
-          </li>
-              <li class="nav-item">
-                  <a href="https://discord.gg/6bCKvP24kb" class="nav-link">Support</a>
-              </li>
-              <li class="nav-item">
-                  <a href="../invite" class="nav-link">Invite</a>
-              </li>
-              <li class="nav-item">
-                  <a href="../docs" class="nav-link">Documentation</a>
-              </li>
-              <li class="nav-item">
-                  <a href="../premium" class="nav-link" style="color: #FFB229;">Premium</a>
-              </li>
-          </ul>
-        </center>
-          <div class="hamburger">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
-          </div>
-      </nav>
-    </header>
+    <center>
+      <header class="header">
+        <nav class="navbar">
+          <img src="../images/TICKET.png" alt="LOGO" class="logo" title="Ticket System#4810
+          ">
+            <ul class="nav-menu">
+              <li class="nav-item" style="padding-left:1rem; padding-right:1rem; margin: auto;">
+                <a href="../" class="nav-link">Home</a>
+            </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+      </header>
+    </center>
+    <br>
+    <h1 class="title">🎉 Release v3.0.0</h1>
+    <br>
+    <p>This release includes a new panel system, with limits for <a href="../premium">premium</a> and non-premium servers.</p>
     <br>
     <br>
-    <div class="typewriter-effect">
-      <div class="text" id="typewriter-text"></div>
-    </div>
-    <p align="center" style="color: whitesmoke; text-align: center;"> The Ticket System Discord Bot is a support system bot on Discord.</p>
-    <br>
-    <br>
-    <div>
-      <center>
-        <img src="images/ts_banner.png" style="width: 75%;" class="center">
-        <!-- <a href="https://top.gg/bot/931352958006886411/vote">
-          <img src="https://top.gg/api/widget/931352958006886411.svg" class="topgg" title="Vote for us on Top.gg!">
-        </a> -->
-      </center>
-    </div>
-    <script src="index.js"></script>
+    <script src="../index.js"></script>
   </body>
 </html>
