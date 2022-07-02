@@ -411,19 +411,48 @@ a {
 
 :target {
   border-radius: 0.5rem;
-  animation: highlight 1750ms ease-out;
+  background-color: var(--primary-color);
 }
-@keyframes highlight {
-  0% {
-    overflow: hidden;
-    background-color: var(--primary-color);
-  }
-  50% {
-    overflow: hidden;
-    background-color: var(--primary-color-light);
-  }
-  100% {
-    overflow: hidden;
-    background-color: inherit;
-  }
+
+
+.content-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  font-family: 'Poppins', sans-serif, monospace;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 3px 8px 8px black;
+}
+
+.content-table thead tr {
+  background-color: var(--primary-color);
+  color: black;
+  text-shadow: 3px 3px 10px black;
+  text-align: auto;
+  font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid grey;
+  color: white;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: var(--secondary-color)
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.content-table tbody tr.active-row {
+  font-weight: bold;
+  color: var(--secondary-color-light);
 }
