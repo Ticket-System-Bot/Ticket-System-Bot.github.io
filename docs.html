@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="icon" type="image/png" href="images/TICKET.png">
-    <meta property="og:image" content="https://i.imgur.com/aAkcTy6.png"/>
+    <link rel="icon" type="image/png" href="images/pfp.png">
+    <meta property="og:image" content=""/>
     <meta name="twitter:card" content="summary_large_image">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="HTML, CSS, JS">
-    <meta name="description" content="Ticket System's main purpose is to give server members a unique, fast, and reliable experience getting support from a server. Ticket System provides server admins with as much customization as needed in order for server admins to get easy and fast support to their server members without any trouble. At Ticket System Development, we strive to keep thinking of new ideas to help server admins with giving support.">
+    <meta name="description" content="View documentation for Server Manager's many commands.">
     <meta name="theme-color" content="#5865f2">
-    <title>Ticket System - Documentation</title>
+    <title>Server Manager - Documentation</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <!--Font Awesome-->
@@ -48,39 +48,12 @@
         text-align: center;
       }
     
-      ::-webkit-scrollbar {
-        width: 15px;
-      }
-
-     
-      ::-webkit-scrollbar-track {
-        box-shadow: inset 0 0 5px grey; 
-        border-radius: 10px;
-      }
- 
-     
-      ::-webkit-scrollbar-thumb {
-        background: grey; 
-        border-radius: 10px;
-      }
-
-     
-      ::-webkit-scrollbar-thumb:hover {
-        background: grey; 
-      }
       p {
         font-family: 'Quicksand', sans-serif;
         font-size: 16px;
         font-weight: 200;
       }
-      #docbox {
-        /* box-shadow: 0 0.5em 0.5em black; */
-        color:white;
-        border-radius: 10px;
-        padding: 1em;
-        background-color: #1b1c1f;
-        
-      }
+      
       required {
         color: #f83333;
       }
@@ -102,12 +75,48 @@
         text-shadow: 2px 2px 4px black;
         
       }
+
+      .title {
+        font-weight: bold;
+        font-family: 'Poppins';
+        vertical-align: top;
+        float: center;
+        text-align: center;
+	      -webkit-text-stroke: 1px #5663F7;
+	      -webkit-text-fill-color:#181b1d;
+        text-shadow: 0px 9px 8px black;
+      letter-spacing: 2px;
+      }
+  
+      p {
+        font-family: 'Poppins';
+        color: whitesmoke;
+        text-align: center;
+      }
+      center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        align-self: center;
+        }
+
+        #docbox {
+        /* box-shadow: 0 0.5em 0.5em black; */
+        color:white;
+        border-radius: 10px;
+        padding: 1em;
+        background-color: #1b1c1f;
+        
+      }
+
+      p a {text-decoration: underline; text-decoration-color: #cdd0fb; text-decoration-style: solid; text-decoration-thickness: 0.25rem; text-underline-position: under; color: #5865f2}
+      p a:hover {text-decoration-color: #5865f2; transition: ease text-decoration-color 0.45s; cursor: pointer;}
     </style>
   </head>
   <body>
     <header class="header">
       <nav class="navbar">
-        <img src="images/TICKET.png" alt="LOGO" class="logo" title="Ticket System#4810
+        <img src="images/pfp.png" alt="LOGO" class="logo" title="Server Manager#9156
         ">
         <center>
           <ul class="nav-menu">
@@ -137,7 +146,7 @@
     </header>
     <br>
     <br>
-    <h1 class="title"><blurple>Documentation</blurple></h1>
+    <h1 class="title" style="font-size:45px;">Documentation</h1>
     <br>
     <br>
     <center>
@@ -145,53 +154,100 @@
         <i class="fa-solid fa-circle-info"></i>
         <p>Command arguments marked in <required>red</required> are required.</p>
         <p>Command arguments marked in <optional>yellow</optional> are optional.</p>
-        <p>Commands marked with <code>⭐</code> are <a href="premium.html" style="color:#FFB229; text-decoration-color: #FFB229;">premium commands</a>.</p>
         <!-- <p style="margin-bottom:0.75em"><code>/command</code>  •   Description</p> -->
       </div>
     </center>
     <br>
-    <div id="docbox">
-      <br>
-      <h3>Setup Commands</h3>
-      <p style="margin-left:0.75em; padding-top: 0.25em; padding-bottom: 0.70em;"> <i class="fa-solid fa-circle-info" style="margin-right:0.25em; color:#f3dc6b;"></i>   •    <strong>Users with <u style="color:#5865f2;">Manage Guild</u> permissions or in the <u><a style="text-decoration:none; text-decoration-color:none; color:#5865f2;">admin role(s)</a></u> can use these commands</strong></p>
-      <p id="setup" style="margin-bottom:0.75em"><code>/setup</code>  •   Setup your server in an interactive proccess</p>
-      <p id="configs" style="margin-bottom:0.75em"><code>/configs <optional>[compact]</optional></code>  •   View all the configurations set for the current server, <code>compact=True</code> shows a compact response</p>
-      <p id="config_channel" style="margin-bottom:0.75em"><code>/config channel <required><#channel></required></code>  •   Set the channel where users will create tickets in</p>
-      <p id="config_category" style="margin-bottom:0.75em"><code>/config category <required><@category></required></code>  •  Set the category where tickets will be created <optional>(MANAGE CHANNEL PERMISSIONS REQUIRED)</optional></p>
-      <p id="config_ticket_embed" style="margin-bottom:0.75em"><code>/config ticket_embed</code>  •   Customize the embed that is sent on a ticket being created</p>
-      <p id="config_message" style="margin-bottom:0.75em"><code>/config message</code>  •  Set the message that is sent on ticket creation (top of the embed)</p>
-      <p id="config_delete_on_leave" style="margin-bottom:0.75em"><code>/config delete_on_leave <required> &lt;value&gt;</required></code>   •   Set whether tickets should be deleted when the author of it leaves</p>
-      <p id="config_log_channel" style="margin-bottom:0.75em"><code>/config log_channel <required><#channel></required></code>  •   Set the log channel for the bot <optional>(MANAGE WEBHOOKS REQUIRED)</optional></p>
-      <p id="config_log_events" style="margin-bottom:0.75em"><code>/config log_events</code>  •   Set what events are dispatched to the log channel when happening (<code><optional>Ticket Create</optional></code>, <code><optional>Ticket Close</optional></code>, <code><optional>Ticket Delete</optional></code>, <code><optional>Ticket Transcripts</optional></code>)</optional></p>
-      <p id="config_staff_roles" style="margin-bottom:0.75em"><code>/config staff_roles <required><@role> &lt;type: add, reset, remove&gt;</required></code>  •   Add a role to the staff roles, remove a role from the staff roles, or reset the staff roles</p>
-      <p id="config_blacklist_roles" style="margin-bottom:0.75em"><code>/config blacklist_roles <required><@role> &lt;type: add, reset, remove&gt;</required></code>  •   Add a role to the blacklist roles, remove a role from the blacklist roles, or reset the blacklist roles <optional>(CAN'T CREATE TICKETS)</optional></p>
-      <p id="config_admin_roles" style="margin-bottom:0.75em"><code>/config admin_roles <required><@role> &lt;type: add, reset, remove&gt;</required></code>  •   Add a role to the admin roles, remove a role from the admin roles, or reset the admin roles</p>
-      <p id="config_reviews" style="margin-bottom:0.75em"><code>/config reviews</code>  •   Configure reviews on a ticket being deleted/closed</p>
-      <p id="config_teams" style="margin-bottom:0.75em"><code>/config teams <required>&lt;name&gt;</required> <required>&lt;category: discord.Category&gt;</required> <required>&lt;type: add, reset, remove&gt;</required></code>  •   Add, reset, or remove custom teams</p>
-      <br>
-    </div>
     <br>
-    <div id="docbox">
-      <h3>Ticket Commands</h3>
-      <p style="margin-left:0.75em; padding-top: 0.25em; padding-bottom: 0.70em;"> <i class="fa-solid fa-circle-info" style="margin-right:0.25em; color:#f3dc6b;"></i>   •    <strong>Users with <u style="color:#5865f2;">Manage Guild</u> permissions or in the <u><a style="text-decoration:none; text-decoration-color:none; color:#5865f2;">staff role(s)</a></u> can use these commands</strong></p>
-      <p id="add" style="margin-bottom:0.75em"><code>/add <required><@user></required> <optional>[reason]</optional></code>  •   Add a user to the ticket</p>
-      <p id="remove" style="margin-bottom:0.75em"><code>/remove <required><@user></required> <optional>[reason]</optional></code>  •   Remove a user from the ticket</p>
-      <p id="request_close" style="margin-bottom:0.75em"><code>/request_close <required>&lt;reason&gt;</required></code>  •   Request the ticket author to give you permission to close the ticket</p>
-      <p id="move" style="margin-bottom:0.75em"><code>/move <required>&lt;team&gt;</required> <required>&lt;reason&gt;</required></code>  •   Move a ticket to a custom team</p>
-      <br>
-    </div>
+  </center>
+  <!-- required: &lt;&gt; -->
+  <h2 class="title" style="font-size:40px;">Moderation Commands</h1>
+  <center>
+    <table class="content-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th><p style="color:#FFB229; text-shadow: 2px 2px 10px #FFB229;">Premium<p></th>
+          <th>Usage</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>warn</td>
+          <td>False</td>
+          <td><code>/warn <required>&lt;member&gt;</required> <required>&lt;reason&gt;</required> <optional>[duration]</optional></code></td>
+          <td>Warn a member</td>
+        </tr>
+        <tr>
+          <td>warnings</td>
+          <td>False</td>
+          <td><code>/warnings <optional>[member]</optional></code></td>
+          <td>View warnings for a member or yourself in a paginated session</td>
+        </tr>
+        <tr>
+          <td>remove_warning</td>
+          <td>False</td>
+          <td><code>/remove_warning <required>&lt;warning_id&gt;</required></code></td>
+          <td>Remove a warning by warning ID</td>
+        </tr>
+        <tr>
+          <td>ban</td>
+          <td>False</td>
+          <td><code>/ban <required>&lt;member&gt;</required> <required>&lt;reason&gt;</required> <optional>[delete_days=0]</optional> <optional>[attachment]</optional></code></td>
+          <td>Ban a member from the server - the <optional>[delete_days]</optional> is an optional argument that deletes the user's messages within the limit of those days</td>
+        </tr>
+        <tr>
+          <td>kick</td>
+          <td>False</td>
+          <td><code>/kick <required>&lt;member&gt;</required> <required>&lt;reason&gt;</required> <optional>[attachment]</optional></code></td>
+          <td>Kick a member from the server</td>
+        </tr>
+        <tr>
+          <td>delete_all_warnings</td>
+          <td style="color:#FFB229; text-shadow: 2px 2px 10px #FFB229;">True</td>
+          <td><code>/delete_all_warnings</code></td>
+          <td>Careful! This removes <required>ALL</required> warnings in the database for YOUR server! <required>This CANNOT be undone.</required> The purpose of this command is to clear warnings to make warning commands faster for your server.</td>
+        </tr>
+        <tr>
+          <td>mute</td>
+          <td>False</td>
+          <td><code>/mute <required>&lt;member&gt;</required> <required>&lt;reason&gt;</required> <required>&lt;duration&gt;</required></code></td>
+          <td>Mute a member - this uses Discord's Timeout feature so please remember to give Server Manager <optional>Moderate Members</optional> permissions for this to work!</td>
+        </tr>
+      </tbody>
+    </table>
+  </center>
     <br>
-    <div id="docbox">
-      <h3>General Commands</h3>
-      <p id="help" style="margin-bottom:0.75em"><code>/help</code>  •   Shows the help command</p>
-      <p id="stats" style="margin-bottom:0.75em"><code>/stats</code>  •   Shows the statistics regarding the bot</p>
-      <p id="serverinfo" style="margin-bottom:0.75em"><code>/serverinfo</code>  •   View info about the server</p>
-      <p style="margin-left:0.75em; padding-bottom: 0.5em;"> <i class="fa-solid fa-circle-info" style="margin-right:0.25em; color:#f3dc6b;"></i>   •    <strong>Users with <u style="color:#5865f2;">Manage Guild</u> permissions or in the <u><a style="text-decoration:none; text-decoration-color:none; color:#5865f2;">admin role(s)</a></u> can use these commands</strong></p>
-      <p id="embed" style="margin-bottom:0.75em"><code>/embed <required>&lt;channel&gt;</required> <optional>[ping_role]</optional></code>  •   Build an embed with an interactive proccess</p>
-      <p id="poll_start" style="margin-bottom:0.75em"><code>/poll start &lt;topic&gt; <optional>[ping_role] [channel]</optional></code>  •   Start a poll</p>
-      <p id="poll_end" style="margin-bottom:0.75em"><code>/poll end &lt;message_id&gt; <optional>[channel]</optional></code>  •   End a poll</p>
-      <br>
-    </div>
+    <h2 class="title" style="font-size:40px;">Utility Commands</h1>
+    <center>
+      <table class="content-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th><p style="color:#FFB229; text-shadow: 2px 2px 10px #FFB229;">Premium<p></th>
+            <th>Usage</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>stats</td>
+            <td>False</td>
+            <td><code>/stats</code></td>
+            <td>View statistics for Server Manager - shows uptime, library version, bot version, and more</td>
+          </tr>
+          <tr>
+            <td>help</td>
+            <td>False</td>
+            <td><code>/help <optional>[command]</optional></code></td>
+            <td>Shows the help command</td>
+          </tr>
+        </tbody>
+      </table>
+    </center>
+    <br>
+    <br>
     <br>
     <br>
     <script src="index.js"></script>

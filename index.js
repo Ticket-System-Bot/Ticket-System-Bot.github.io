@@ -22,7 +22,7 @@ function closeToast(){
 
 
 const typeWriter = document.getElementById('typewriter-text');
-const text = 'Ticket System';
+const text = 'Server Manager';
 
 if (typeWriter) {
     typeWriter.innerHTML = text;

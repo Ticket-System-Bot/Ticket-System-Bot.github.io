@@ -380,6 +380,11 @@ a {
       opacity: 0;
     }
   }
+
+  .logo {
+    width: 53px;
+    margin-top: 5px;
+  }
   
 
   .nav-item {
@@ -417,9 +422,9 @@ a {
 
 .content-table {
   border-collapse: collapse;
-  margin: 25px 0;
+  margin: 1.5em;
   font-size: 0.9em;
-  min-width: 400px;
+  min-width: 300px;
   font-family: 'Poppins', sans-serif, monospace;
   border-radius: 5px 5px 0 0;
   overflow: hidden;
