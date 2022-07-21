@@ -1,1 +1,1 @@
-https://ticketsystembot.ml/
+https://servermanagerbot.ml/
