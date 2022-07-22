@@ -218,6 +218,7 @@
       </tbody>
     </table>
   </center>
+  <!-- required: &lt;&gt; -->
     <br>
     <h2 class="title" style="font-size:40px;">Utility Commands</h1>
     <center>
@@ -231,6 +232,18 @@
           </tr>
         </thead>
         <tbody>
+          <tr>
+            <td>poll start</td>
+            <td>False</td>
+            <td><code>/poll start <required>&lt;topic&gt;</required> <optional>[description]</optional> <optional>[duration]</optional> <optional>[ping_role]</optional> <optional>[channel]</optional></code></td>
+            <td>Start a poll with an optional duration to end/close - only 5 polls allowed to be running for non-premium servers. Premium have access to unlimited polls</td>
+          </tr>
+          <tr>
+            <td>poll end</td>
+            <td>False</td>
+            <td><code>/poll end <required>&lt;poll_id&gt;</required></code></td>
+            <td>End a poll, the poll ID should be at the embed footer of the poll</td>
+          </tr>
           <tr>
             <td>stats</td>
             <td>False</td>
@@ -246,6 +259,89 @@
         </tbody>
       </table>
     </center>
+  <!-- required: &lt;&gt; -->
+  <br>
+  <h2 class="title" style="font-size:40px;">Admin Commands</h1>
+  <center>
+    <table class="content-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th><p style="color:#FFB229; text-shadow: 2px 2px 10px #FFB229;">Premium<p></th>
+          <th>Usage</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>config custom_reasons</td>
+          <td>False</td>
+          <td><code>/config custom_reasons <optional>[hidden=False]</optional></code></td>
+          <td>View custom reasons for the server</td>
+        </tr>
+        <tr>
+          <td>config custom_reason add</td>
+          <td>False</td>
+          <td><code>/config custom_reason add <required>&lt;name&gt</required> <required>&lt;value&gt</required></code></td>
+          <td>Add a custom reason, these can be used in moderation commands. They're kind of like snippets. Premium limit: 10. Non-premium limit: 5</td>
+        </tr>
+        <tr>
+          <td>config custom_reason remove</td>
+          <td>False</td>
+          <td><code>/config custom_reason remove <required>&lt;name&gt</required></code></td>
+          <td>Remove a custom reason by name</td>
+        </tr>
+        <tr>
+          <td>config log_channel</td>
+          <td>False</td>
+          <td><code>/config log_channel <required>&lt;#channel&gt</required></code></td>
+          <td>Set the server's log channel for moderation cases and other logs</td>
+        </tr>
+        <tr>
+          <td>config log_events</td>
+          <td>False</td>
+          <td><code>/config log_events</code></td>
+          <td>Set the logging events that go to the log channel when dispatched (use dropdown)</td>
+        </tr>
+        <tr>
+          <td>config admin_roles</td>
+          <td>False</td>
+          <td><code>/config admin_roles <optional>[hidden=False]</optional></code></td>
+          <td>View the administrator roles for the server</td>
+        </tr>
+        <tr>
+          <td>config admin_role add</td>
+          <td>False</td>
+          <td><code>/config admin_role add <required>&lt;@role&gt;</required></code></td>
+          <td>Add a role as an administrator role, users with these roles can use configuration commands and other moderator-only commands</td>
+        </tr>
+        <tr>
+          <td>config admin_role remove</td>
+          <td>False</td>
+          <td><code>/config admin_role remove <required>&lt;@role&gt;</required></code></td>
+          <td>Remove a role as an administrator role</td>
+        </tr>
+        <tr>
+          <td>config moderator_roles</td>
+          <td>False</td>
+          <td><code>/config moderator_roles <optional>[hidden=False]</optional></code></td>
+          <td>View the moderator_roles for the server</td>
+        </tr>
+        <tr>
+          <td>config moderator_role add</td>
+          <td>False</td>
+          <td><code>/config moderator_role add <required>&lt;@role&gt;</required></code></td>
+          <td>Add a role as a moderator role, users with these roles can use moderation commands and other moderator-only commands</td>
+        </tr>
+        <tr>
+          <td>config moderator_role remove</td>
+          <td>False</td>
+          <td><code>/config moderator_role remove <required>&lt;@role&gt;</required></code></td>
+          <td>Remove a role as a moderator role</td>
+        </tr>
+      </tbody>
+    </table>
+  </center>
     <br>
     <br>
     <br>
