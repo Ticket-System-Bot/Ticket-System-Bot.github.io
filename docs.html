@@ -261,6 +261,66 @@
     </center>
   <!-- required: &lt;&gt; -->
   <br>
+  <h2 class="title" style="font-size:40px;" id="suggestions">Suggestion Commands</h1>
+  <center>
+    <table class="content-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th><p style="color:#FFB229; text-shadow: 2px 2px 10px #FFB229;">Premium<p></th>
+          <th>Usage</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>suggest</td>
+          <td>False</td>
+          <td><code>/suggest <required>&lt;suggestion&gt;</required></code></td>
+          <td>Suggest something to the server</td>
+        </tr>
+        <tbody>
+          <tr>
+            <td>suggestions view</td>
+            <td>False</td>
+            <td><code>/suggestions view <required>&lt;id&gt;</required> <optional>[hidden]</optional></code></td>
+            <td>View a suggestions. You can view upvoted users, downvoted users, and suggestion subscriptions which are hidden on the public suggestion view</td>
+          </tr>
+          <tr>
+            <td>suggestions approve</td>
+            <td>False</td>
+            <td><code>/suggestion approve <required>&lt;id&gt;</required> <optional>[comment]</optional> <optional>[close_voting=False]</optional> <optional>[hidden=False]</optional></code></td>
+            <td>(Administrator only) Mark a suggestion as approved. <code>close_voting</code> closes the suggestion voting and removed the suggestion from the database. This <optional>CANNOT</optional> be undone!</td>
+          </tr>
+          <tr>
+            <td>suggestions deny</td>
+            <td>False</td>
+            <td><code>/suggestion deny <required>&lt;id&gt;</required> <optional>[comment]</optional> <optional>[close_voting=False]</optional> <optional>[hidden=False]</optional></code></td>
+            <td>(Administrator only) Mark a suggestion as denied.</td>
+          </tr>
+          <tr>
+            <td>suggestions implement</td>
+            <td>False</td>
+            <td><code>/suggestions implement <required>&lt;id&gt;</required> <optional>[comment]</optional> <optional>[close_voting=False]</optional> <optional>[hidden=False]</optional></code></td>
+            <td>(Administrator only) Mark a suggestion as implemented.</td>
+          </tr>
+          <tr>
+            <td>suggestions consider</td>
+            <td>False</td>
+            <td><code>/suggestions consider <required>&lt;id&gt;</required> <optional>[comment]</optional> <optional>[hidden=False]</optional></code></td>
+            <td>(Administrator only) Mark a suggestion as considered.</td>
+          </tr>
+          <tr>
+            <td>suggestions comment</td>
+            <td style="color:#FFB229; text-shadow: 2px 2px 10px #FFB229;">True</td>
+            <td><code>/suggestions comment <required>&lt;id&gt;</required> <optional>[comment]</optional> <optional>[hidden=False]</optional></code></td>
+            <td>(Administrator only) Comment on a suggestion. At the moment, comments can't be removed but have an ID. Comments will be able to removed in the future. <a href="/support">Join the support server for updates</a>!</td>
+          </tr>
+      </tbody>
+    </table>
+  </center>
+  <!-- required: &lt;&gt; -->
+  <br>
   <h2 class="title" style="font-size:40px;" id="admin">Admin Commands</h1>
   <center>
     <table class="content-table">
