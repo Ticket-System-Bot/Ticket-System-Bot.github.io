@@ -276,6 +276,9 @@ a {
     min-width: none;
     margin: 5px;
   }
+  .typewriter-effect {
+    font-size: 2.5rem;
+  }
   .content-table tbody tr code {
     font-size: 0.75rem;
   }
