@@ -1,1 +1,1 @@
-To start: <kdb>npx docusaurus start</kbd>
+To start: `npx docusaurus start`
