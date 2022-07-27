@@ -1,6 +1,6 @@
 import React from 'react';
 
-import PYCButton from './PYCButton';
+import PYCButton from './Button';
 
 interface PYCHeroProps {
     title?: string;

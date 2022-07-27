@@ -11,7 +11,7 @@ interface PYCButtonProps {
     children?: string;
 }
 
-const PYCButton: React.FC<PYCButtonProps> = ({
+const Button: React.FC<PYCButtonProps> = ({
     type,
     label,
     icon,
@@ -48,4 +48,4 @@ const PYCButton: React.FC<PYCButtonProps> = ({
     }
 };
 
-export default PYCButton;
+export default Button;
