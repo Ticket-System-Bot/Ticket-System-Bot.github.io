@@ -4,6 +4,12 @@ description: Suggestions Info
 sidebar_position: 5
 ---
 
+:::info
+
+This is a new system we have added, if you see any bugs, please report them to our [support server](/support)!
+
+:::
+
 import Button from '../src/components/Button';
 import {
   DiscordInteraction,
@@ -15,7 +21,8 @@ import {
 } from "discord-message-components/packages/react";
 import "discord-message-components/packages/react/dist/style.css";
 
-<br>
+Below is an example of a suggestion
+
 <DiscordComponent>
     <DiscordMessage author="Docs Bot" avatar="blue" bot>
         <DiscordEmbed
@@ -38,16 +45,7 @@ import "discord-message-components/packages/react/dist/style.css";
                   📣 This suggestion is waiting for an official answer!
                 </DiscordEmbedField>
             </DiscordEmbedFields>
-            <span slot="footer">Suggestion ID:wasdabc12340</span>
+            <span slot="footer">Suggestion ID: wasdabc12340</span>
         </DiscordEmbed>
     </DiscordMessage>
 </DiscordComponent>
-<br/>
-
-:::info
-
-This is a new system we have added, if you see any bugs, please report them to our [support server](/support)!
-
-:::
-
-Bellow is a image of what the suggestion will look like
