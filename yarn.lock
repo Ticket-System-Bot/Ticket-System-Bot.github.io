@@ -1440,6 +1440,21 @@
     "react-helmet-async" "*"
     "react-loadable" "npm:@docusaurus/react-loadable@5.5.2"
 
+"@docusaurus/plugin-client-redirects@^2.0.0-rc.1":
+  "integrity" "sha512-uGiK7kzQeJ+gChzIgazKMlHEonOwlmK6NEJvr44aWS6DbauVXOs/aolXZCHx8ZdKPETOpZEzSRYjU5e+QIN+HA=="
+  "resolved" "https://registry.npmjs.org/@docusaurus/plugin-client-redirects/-/plugin-client-redirects-2.0.0-rc.1.tgz"
+  "version" "2.0.0-rc.1"
+  dependencies:
+    "@docusaurus/core" "2.0.0-rc.1"
+    "@docusaurus/logger" "2.0.0-rc.1"
+    "@docusaurus/utils" "2.0.0-rc.1"
+    "@docusaurus/utils-common" "2.0.0-rc.1"
+    "@docusaurus/utils-validation" "2.0.0-rc.1"
+    "eta" "^1.12.3"
+    "fs-extra" "^10.1.0"
+    "lodash" "^4.17.21"
+    "tslib" "^2.4.0"
+
 "@docusaurus/plugin-content-blog@2.0.0-rc.1":
   "integrity" "sha512-BVVrAGZujpjS/0rarY2o24rlylRRh2NZuM65kg0JNkkViF79SeEHsepog7IuHyoqGWPm1N/I7LpEp7k+gowZzQ=="
   "resolved" "https://registry.npmjs.org/@docusaurus/plugin-content-blog/-/plugin-content-blog-2.0.0-rc.1.tgz"
