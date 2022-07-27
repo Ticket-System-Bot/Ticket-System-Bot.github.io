@@ -1,0 +1,53 @@
+---
+title: Suggestions
+description: Suggestions Info
+sidebar_position: 5
+---
+
+import Button from '../src/components/Button';
+import {
+  DiscordInteraction,
+  DiscordMessage,
+  DiscordMessages,
+  DiscordEmbed,
+  DiscordEmbedField,
+  DiscordEmbedFields,
+} from "discord-message-components/packages/react";
+import "discord-message-components/packages/react/dist/style.css";
+
+<br>
+<DiscordComponent>
+    <DiscordMessage author="Docs Bot" avatar="blue" bot>
+        <DiscordEmbed
+        authorIcon="/img/logo.png"
+        authorName="User#0000"
+        thumbnail="/img/logo.png"
+        borderColor="#5865F2"
+        timestamp="01/09/2021"
+        footerIcon="/img/logo.png"
+        image="/img/banner-v3.png"
+        >
+        This is a suggestion! Fields below show information about this suggestion. In the <code>Votes</code> field, it shows the amount of votes and the percentage of of upvotes compared to downvotes and vice-versa.            
+            <DiscordEmbedFields slot="fields" inline="true">
+                <DiscordEmbedField fieldTitle="Votes">
+                  <strong>Upvotes:</strong> 3 <code>(100%)</code>
+                  <br/>
+                  <strong>Downvotes:</strong> 0 <code>(0%)</code>
+                </DiscordEmbedField>
+                <DiscordEmbedField fieldTitle="Status">
+                  📣 This suggestion is waiting for an official answer!
+                </DiscordEmbedField>
+            </DiscordEmbedFields>
+            <span slot="footer">Suggestion ID:wasdabc12340</span>
+        </DiscordEmbed>
+    </DiscordMessage>
+</DiscordComponent>
+<br/>
+
+:::info
+
+This is a new system we have added, if you see any bugs, please report them to our [support server](/support)!
+
+:::
+
+Bellow is a image of what the suggestion will look like
