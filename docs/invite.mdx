@@ -1,0 +1,9 @@
+import {Redirect} from '@docusaurus/router';
+import {useEffect} from 'react';
+
+export function Jump() {
+  useEffect(() => location.href = "https://discord.com/api/oauth2/authorize?client_id=999132132754600016&permissions=1497736146166&scope=bot%20applications.commands&redirect_uri=https://servermanagerbot.ml/docs&response_type=code", []);
+  return null;
+}
+
+<Jump />
