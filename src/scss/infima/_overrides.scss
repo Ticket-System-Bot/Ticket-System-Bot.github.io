@@ -4,8 +4,6 @@
   .navbar {
     height: 100%;
     background-color: rgba(sentro.token-get-raw('surface'), 97%);
-    box-shadow: none;
-    // filter: blur(8px);
     
     .navbar__toggle {
       color: #fff !important;
