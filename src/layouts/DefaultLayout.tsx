@@ -19,7 +19,7 @@ const DefaultLayout: React.FC<DefaultLayoutProps> = ({ title, description, child
                 <meta property="og:description" content="Server Manager is a unique Discord bot that gives server moderators and admins easy and reliable ways to moderate the servers they care about, let Server Manager do the hard work for you." />
                 <meta property="og:title" content="Server Manager" />
                 <meta property="og:image" content="https://imgur.com/BHyNRD2.png"/>
-                <meta name="twitter:card" content="summary_large_image">
+                <meta name="twitter:card" content="summary_large_image"/>
                 <meta name="theme-color" content="#5865F2" />
             </Head>
             <Layout>
