@@ -1,9 +1,12 @@
-import {Redirect} from '@docusaurus/router';
-import {useEffect} from 'react';
+---
+title: Support
+description: Join our Discord Support server!
+sidebar_position: 3
+---
+import PYCButton from '../src/components/PYCButton';
 
-export function Jump() {
-  useEffect(() => location.href = "https://discord.gg/6bCKvP24kb", []);
-  return null;
-}
+You can join our support server for Server Manager Premium Giveaways, status updates, bot updates, version releases, and more!
 
-<Jump />
+<div className="pyc-hero__actions">
+  <PYCButton link="https://discord.gg/6bCKvP24kb">Join support server...</PYCButton>
+</div>

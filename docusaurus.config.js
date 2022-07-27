@@ -51,16 +51,11 @@ const config = {
       title: "Server Manager",
       hideOnScroll: true,
       items: [
-        // TODO: Post v2.0: Version the docs
-        // {
-        //   type: 'docsVersionDropdown',
-        //   position: 'right',
-        // },
-        // TODO: Locales
-        // {
-        //   type: 'localeDropdown',
-        //   position: 'right',
-        // },
+        {
+          href: '../invite',
+          position: 'left',
+          label: 'Docs',
+        },
       ],
     },
     footer: {
