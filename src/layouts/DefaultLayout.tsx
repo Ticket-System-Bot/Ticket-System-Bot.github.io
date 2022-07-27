@@ -16,8 +16,8 @@ const DefaultLayout: React.FC<DefaultLayoutProps> = ({ title, description, child
             <Head>
                 <title>{ title } - { site.tagline }</title>
                 <meta name="description" content={ description } />
-                <meta property="og:description" content="Server Manager's documentation for it's many commands!" />
-                <meta property="og:title" content="The Pycord Guide" />
+                <meta property="og:description" content="Server Manager's is a simple - yet customizable - multipurpose bot." />
+                <meta property="og:title" content="Server Manager" />
                 <meta property="og:image" content="../img/logo.png" />
                 <meta name="theme-color" content="#5865F2" />
             </Head>
