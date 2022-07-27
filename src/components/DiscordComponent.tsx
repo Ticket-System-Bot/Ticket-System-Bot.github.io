@@ -5,7 +5,6 @@ import {
 	DiscordMessageOptions,
 	DiscordMessages,
 } from 'discord-message-components/packages/react'
-import Twemoji from 'react-twemoji';
 
 export const defaultOptions: DiscordMessageOptions = {
 	...DiscordDefaultOptions,
