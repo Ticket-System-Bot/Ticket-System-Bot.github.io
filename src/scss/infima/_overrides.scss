@@ -138,5 +138,6 @@
   .footer {
     --ifm-footer-background-color: #{sentro.token-get('surface')};
     --ifm-footer-color: #{sentro.token-get('surface-ink')};
+    box-shadow: #5865f2 0px 2px 10px;
   }
 }
