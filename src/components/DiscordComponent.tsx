@@ -9,15 +9,15 @@ import {
 export const defaultOptions: DiscordMessageOptions = {
 	...DiscordDefaultOptions,
 	profiles: {
-		bob: {
-			author: 'BobDotCom',
-			avatar: '/img/bob.png',
-			roleColor: '#2cd6f7',
+		nziie: {
+			author: 'vNziie--',
+			avatar: '/img/nziie.png',
+			roleColor: '#00ffff',
 		},
-        robocord: {
-            author: 'Robocord',
-            avatar: '/img/robocord.png',
-            roleColor: '#9b59b6',
+        servermanager: {
+            author: 'Server Manager',
+            avatar: '/img/logo.png',
+            roleColor: '#38faff',
             bot: true,
         },
 		dorukyum: {
