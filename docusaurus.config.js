@@ -53,8 +53,18 @@ const config = {
       items: [
         {
           href: '../invite',
-          position: 'left',
-          label: 'Docs',
+          position: 'right',
+          label: 'Invite',
+        },
+        {
+          href: '../support',
+          position: 'right',
+          label: 'Support',
+        },
+        {
+          href: '../status',
+          position: 'right',
+          label: 'Status',
         },
       ],
     },
