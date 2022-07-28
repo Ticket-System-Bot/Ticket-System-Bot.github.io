@@ -23,48 +23,55 @@ import DiscordComponent, { defaultOptions } from "../../src/components/DiscordCo
 
 |     Usage               |  Description   | Premium |
 | ----------------------- | ----------- | ----------- |
-| <code>/giveaway start [...]</code> | Start a giveaway       |   False        |
-| <code>/giveaway end <giveaway_id></code>   | End a giveaway via giveaway ID        |     False        |
-| <code>/giveaway reroll <giveaway_id> &lt;winners&gt; </code>   | Reroll a giveaway        |     <premium>True</premium>        |
-| <code>/giveaway view <giveaway_id></code>   | View a giveaway        |     False        |
+| <code>/poll start &lt;topic&gt; [description] [duration] [@ping_role] [#channel]</code> | Start a poll with an optional duration       |   False        |
+| <code>/poll end &lt;poll_id&gt;</code>   | End a poll via giveaway ID        |     False        |
 
 <br/>
 
 ## Example
 
 ```txt
-/poll
+/poll start topic:Poll topic description: This is a poll description. duration: 7d
 ```
 
 <DiscordComponent>
     <DiscordMessage author="Docs Bot" avatar="blue" bot>
         <DiscordEmbed
-        embedTitle="Poll name"
-        borderColor="#2ecc71"
+        embedTitle="Poll topic"
+        borderColor="#5865f2"
         timestamp="12/24/2022"
+        authorIcon="/img/logo.png"
         footerIcon="/img/logo.png"
-        image="/img/banner-v3.png"
+        authorName="Poll by User#0000"
         >
         This is a poll description.            
             <DiscordEmbedFields slot="fields" inline="true">
-                <DiscordEmbedField fieldTitle="Ends">
-                <code>in 6 hours</code>
+                <DiscordEmbedField fieldTitle="Votes">
+                <strong>Upvotes:</strong> 3 <code>(100%)</code>
+                <br/>
+                <strong>Downvotes:</strong> 0 <code>(0%)</code>
                 </DiscordEmbedField>
-                <DiscordEmbedField fieldTitle="Host">
-                  <DiscordMention highlight={true}>{defaultOptions.profiles.nziie.author}</DiscordMention>
+                <DiscordEmbedField fieldTitle="Ends">
+                <code>in 7 days</code>
                 </DiscordEmbedField>
             </DiscordEmbedFields>
-            <span slot="footer">1 winner</span>
+            <span slot="footer">Vote using the buttons below • Poll ID: 12345678</span>
         </DiscordEmbed>
       <div slot="interactions">
         <DiscordInteraction profile="bob" command>
-          giveaway
+          poll start
         </DiscordInteraction>
+      </div>
+      <div>
+        <DiscordButtons>
+          <DiscordButton type="success" emoji="✅"></DiscordButton>
+          <DiscordButton type="secondary" disabled="true">|</DiscordButton>
+          <DiscordButton type="danger" emoji="❌"></DiscordButton>
+        </DiscordButtons>
       </div>
       <div slot="actions">
         <DiscordButtons>
-          <DiscordButton type="primary" emoji="🎉"></DiscordButton>
-          <DiscordButton type="secondary" disabled="true">3 entries</DiscordButton>
+          <DiscordButton type="danger" emoji="🚪">Leave Poll</DiscordButton>
         </DiscordButtons>
       </div>
     </DiscordMessage>
