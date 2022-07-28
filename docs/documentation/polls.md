@@ -24,7 +24,7 @@ import DiscordComponent, { defaultOptions } from "../../src/components/DiscordCo
 |     Usage               |  Description   | Premium |
 | ----------------------- | ----------- | ----------- |
 | <code>/poll start &lt;topic&gt; [description] [duration] [@ping_role] [#channel]</code> | Start a poll with an optional duration       |   False        |
-| <code>/poll end &lt;poll_id&gt;</code>   | End a poll via giveaway ID        |     False        |
+| <code>/poll end &lt;poll_id&gt;</code>   | End a poll via poll ID        |     False        |
 
 <br/>
 
