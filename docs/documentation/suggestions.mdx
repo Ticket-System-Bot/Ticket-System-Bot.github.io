@@ -1,7 +1,7 @@
 ---
 title: Suggestions
-description: Suggestions Info
-sidebar_position: 5
+description: Documentation regarding the suggestion system
+sidebar_position: 2
 ---
 
 :::info
@@ -10,7 +10,7 @@ This is a new system we have added, if you see any bugs, please report them to o
 
 :::
 
-import Button from '../src/components/Button';
+import Button from '../../src/components/Button';
 import {
   DiscordInteraction,
   DiscordMessage,
@@ -62,6 +62,6 @@ Below is an example of a suggestion
 | <code>/suggestions deny &lt;id&gt; [comment] [close_voting=False] [hidden=False]</code>   | Deny a suggestion        |     False        |
 | <code>/suggestions implement &lt;id&gt; [comment] [close_voting=False] [hidden=False]</code>   | Implement a suggestion        |     False        |
 | <code>/suggestions consider &lt;id&gt; [comment] [hidden=False]</code>   | Consider a suggestion        |     False        |
-| <code>/suggestions comment &lt;id&gt; &lt;comment&gt;</code>   | Comment on a suggestion        |     False        |
+| <code>/suggestions comment &lt;id&gt; &lt;comment&gt;</code>   | Comment on a suggestion        |     <premium>True</premium>        |
 
 <br />

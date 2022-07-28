@@ -1,10 +1,10 @@
 ---
 title: Giveaways
 description: Documentation regarding a giveaway system
-sidebar_position: 5
+sidebar_position: 1
 ---
 
-import Button from '../src/components/Button';
+import Button from '../../src/components/Button';
 import {
   DiscordInteraction,
   DiscordMessage,
@@ -19,7 +19,7 @@ import {
   DiscordButton,
   DiscordButtons,
 } from "discord-message-components/packages/react";
-import DiscordComponent, { defaultOptions } from "../src/components/DiscordComponent";
+import DiscordComponent, { defaultOptions } from "../../src/components/DiscordComponent";
 
 |     Usage               |  Description   | Premium |
 | ----------------------- | ----------- | ----------- |
@@ -33,7 +33,7 @@ import DiscordComponent, { defaultOptions } from "../src/components/DiscordCompo
 ## Example
 
 ```txt
-/giveaway title:$5 Nitro Classic description:$5 Nitro Classic giveaway... duration:6h winners:1
+/giveaway start title:$5 Nitro Classic description:$5 Nitro Classic giveaway... duration:6h winners:1
 ```
 
 <DiscordComponent>
@@ -58,12 +58,13 @@ import DiscordComponent, { defaultOptions } from "../src/components/DiscordCompo
         </DiscordEmbed>
       <div slot="interactions">
         <DiscordInteraction profile="bob" command>
-          button
+          giveaway
         </DiscordInteraction>
       </div>
       <div slot="actions">
         <DiscordButtons>
           <DiscordButton type="primary" emoji="🎉"></DiscordButton>
+          <DiscordButton type="secondary" disabled="true">3 entries</DiscordButton>
         </DiscordButtons>
       </div>
     </DiscordMessage>
