@@ -45,24 +45,24 @@ const config = {
     },
     colorMode: {
       defaultMode: "dark",
-      disableSwitch: true,  // TODO: Support light mode (I know, I know. Eww. I'm sorry.)
+      disableSwitch: true,
     },
     navbar: {
       title: "Server Manager",
       hideOnScroll: true,
       items: [
         {
-          href: '../invite',
+          href: 'https://discord.com/api/oauth2/authorize?client_id=999132132754600016&permissions=1497736146166&scope=bot%20applications.commands&redirect_uri=https://servermanagerbot.ml/docs&response_type=code',
           position: 'right',
           label: 'Invite',
         },
         {
-          href: '../support',
+          href: 'https://discord.gg/6bCKvP24kb',
           position: 'right',
           label: 'Support',
         },
         {
-          href: '../status',
+          href: 'https://server-manager.instatus.com',
           position: 'right',
           label: 'Status',
         },
