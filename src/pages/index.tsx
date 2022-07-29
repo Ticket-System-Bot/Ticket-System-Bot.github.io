@@ -2,6 +2,7 @@ import React from "react";
 import DefaultLayout from "../layouts/DefaultLayout";
 import PYCHero from "@site/src/components/PYCHero";
 import PYCButton from "@site/src/components/Button";
+import Head from '@docusaurus/Head';
 
 export default function Home(): JSX.Element {
   return (
@@ -9,6 +10,9 @@ export default function Home(): JSX.Element {
       title="Server Manager Documentation"
       description="Server Manage Docs"
     >
+<Head>
+<script async src="https://arc.io/widget.min.js#hD9CJ6sv"></script>
+</Head>
       <PYCHero
         title="Server Manager Documentation"
         subtitle="Server Manager - A simple multipurpose Discord bot"
