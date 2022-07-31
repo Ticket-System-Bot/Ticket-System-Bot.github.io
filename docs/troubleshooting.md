@@ -1,7 +1,7 @@
 ---
 title: Troubleshooting
 description: Having trouble with Server Manager?
-sidebar_position: 8
+sidebar_position: 2
 ---
 
 ## 403 Forbidden
