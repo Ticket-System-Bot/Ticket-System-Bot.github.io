@@ -4,11 +4,6 @@ description: Documentation regarding a giveaway system
 sidebar_position: 1
 ---
 
-<div class="blurple-background">
-  <h4 title="This is currently a beta feature">BETA</h4>
-</div>
-<br/>
-
 import Button from '../../src/components/Button';
 import {
   DiscordInteraction,
