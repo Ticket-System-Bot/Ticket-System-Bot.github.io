@@ -175,6 +175,12 @@ body {
   }
 }
 
+.test {
+  &::before {
+    content: '-';
+  }
+}
+
 .features {
   display: flex;
   flex-flow: row wrap;
