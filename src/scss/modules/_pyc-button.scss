@@ -16,6 +16,7 @@
     border-radius: sentro.token-get('radius-small');
     cursor: pointer;
     user-select: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     @include sentro.prefix(transition, all 0.1s ease);
     
     & > * + * {

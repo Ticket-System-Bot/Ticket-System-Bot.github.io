@@ -16,6 +16,7 @@ const PYCHero: React.FC<PYCHeroProps> = ({ title, subtitle, hasLogo = true }) =>
                     <img
                         src={ '/img/logo.png' }
                         alt="Pycord Logo"
+                        className="logo"
                     />
                 }
                 <h1>{ title }</h1>

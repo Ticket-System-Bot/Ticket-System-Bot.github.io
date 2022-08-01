@@ -6,7 +6,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/vsDark");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Server Manager Docs",
+  title: "Server Manager",
   tagline:
     "Imagine a simple customizable multipurpose bot",
   url: "https://servermanagerbot.ml",
