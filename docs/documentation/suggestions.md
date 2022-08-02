@@ -6,7 +6,7 @@ sidebar_position: 2
 
 :::info
 
-This is a new system we have added, if you see any bugs, please report them to our [support server](/support)!
+This is a new system we have added, if you see any bugs, please report them to our [support server](/support.html)!
 
 :::
 

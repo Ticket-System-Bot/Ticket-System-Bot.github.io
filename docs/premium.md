@@ -7,12 +7,12 @@ Want to unlock the full potential of **Server Manager**? Support us on [Ko-fi]
 
 
 ## Supporter Tier
-Support the bot with a $2 donation. This will help with hosting costs. To show our thanks, we're giving you Server Manager Premium as long as you keep paying monthly. Another perk to this is that you get a Premium Supporter role in the support server (only available if you're in the [support server](/support)).
+Support the bot with a $2 donation. This will help with hosting costs. To show our thanks, we're giving you Server Manager Premium as long as you keep paying monthly. Another perk to this is that you get a Premium Supporter role in the support server (only available if you're in the [support server](/support.html)).
 
 ### Perks
   - **Access to premium commands**
   - Access to **beta** features
-  - The `Premium Supporter` role in the [support server](/support)
+  - The `Premium Supporter` role in the [support server](/support.html)
   - Exclusive sneak peaks
 
 ## Super Supporter Tier
@@ -23,7 +23,7 @@ Support the bot with a $2 donation. This will help with hosting costs. To show o
   - **Custom branded Server Manager**
 
   :::danger
-  Please note that you must be in the [support server](/support) to be able to redeem this tier along with the other tiers! While you have this tier, your payment pays for the hosting for your bot. You also **do not** get access to your custom branded bot's code.
+  Please note that you must be in the [support server](/support.html) to be able to redeem this tier along with the other tiers! While you have this tier, your payment pays for the hosting for your bot. You also **do not** get access to your custom branded bot's code.
   :::
 
   <br/>
