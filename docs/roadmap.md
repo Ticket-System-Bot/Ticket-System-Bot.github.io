@@ -13,8 +13,8 @@ import Button from '../src/components/Button';
     <br/>
     • Giveaway System
   </TabItem>
-    <TabItem value="roadmap-planned" label="📃 Planned (soon)">
-    <strong>None</strong>
+  <TabItem value="roadmap-planned" label="📃 Planned (soon)">
+    • A giveaway re-roll command. This would be premium indefinitely for a while and the giveaway wouldn't be removed when ending like it does now, it would be removed **1 week** after ending. Thus giving admins a chance to re-roll the giveaway.
   </TabItem>
   <TabItem value="roadmap-coming-soon" label="📮 Coming Soon" default>
     • Multiple choice poll options
