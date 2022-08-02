@@ -16,7 +16,7 @@ import "discord-message-components/packages/react/dist/style.css";
 
 | Usage      | Description | Premium |
 | ----------- | ----------- | ----------- | 
-| <code>/embed &lt;#channel&gt; </code>      | Build an embed to send to a channel with an interactive proccess       |   False        |
+| <code>/embed &lt;#channel&gt; [ping_role]</code>      | Build an embed to send to a channel with an interactive proccess       |   False        |
 | <code>/stats</code>      | Shows Server Manager's uptime, library version, library and more       |   False        |
 | <code>/help</code>      | Shows the help command       |   False        |
 
