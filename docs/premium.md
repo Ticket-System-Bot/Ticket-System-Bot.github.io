@@ -3,7 +3,7 @@ title: Premium
 description: Unlock the full potential of Server Manager
 ---
 
-Want to unlock the full potential of **Server Manager**? Support us on [Ko-fi]
+Want to unlock the full potential of **Server Manager**? Support us on [Ko-fi](https://ko-fi.com).
 
 
 ## Supporter Tier
