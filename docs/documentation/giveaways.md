@@ -25,7 +25,7 @@ import DiscordComponent, { defaultOptions } from "../../src/components/DiscordCo
 | ----------------------- | ----------- | ----------- |
 | <code>/giveaway start [...]</code> | Start a giveaway       |   False        |
 | <code>/giveaway end <giveaway_id></code>   | End a giveaway via giveaway ID        |     False        |
-| <code>/giveaway reroll <giveaway_id> &lt;winners&gt; </code>   | Reroll a giveaway        |     <premium>True</premium>        |
+| <code>/giveaway reroll <giveaway_id> &lt;winners&gt; </code>   | Reroll a giveaway        |     False        |
 | <code>/giveaway view <giveaway_id></code>   | View a giveaway        |     False        |
 
 <br/>
